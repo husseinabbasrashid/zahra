@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#fff7f5">
-<meta name="description" content="A little birthday universe made just for Zahra.">
+<meta name="description" content="A tiny birthday adventure made just for Zahra.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="For Zahra — A Birthday to Remember">
-<meta property="og:description" content="A little birthday universe made just for Zahra.">
+<meta property="og:title" content="Zahra’s Birthday Adventure">
+<meta property="og:description" content="A tiny birthday adventure made just for Zahra.">
 <meta property="og:url" content="https://husseinabbasrashid.github.io/zahra/">
 <meta name="twitter:card" content="summary">
-<title>For Zahra — A Birthday to Remember</title>
+<title>Zahra’s Birthday Adventure</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
@@ -47,38 +47,32 @@ h1,h2{font-family:var(--serif);font-weight:500;letter-spacing:-.055em}h1{font-si
 <div class="ambient" aria-hidden="true"><i class="orb one"></i><i class="orb two"></i><i class="orb three"></i></div>
 <canvas id="confetti" aria-hidden="true"></canvas>
 <header class="topbar"><nav class="nav"><a class="brand" href="#" onclick="return false">for <span>Zahra.</span></a><div class="nav-right"><button class="icon-btn" id="soundToggle" type="button" title="Turn birthday music on" aria-label="Turn birthday music on" aria-pressed="false">♪</button><button class="icon-btn" id="themeToggle" type="button" title="Switch to dark theme" aria-label="Switch to dark theme" aria-pressed="false">☾</button><button class="icon-btn" id="surprise" title="A little surprise" aria-label="Surprise">✧</button></div></nav></header>
-<div class="progress-area"><div class="progress-meta"><span id="chapterName">The beginning</span><span id="pageCount">01 / 07</span></div><div class="progress-track" role="progressbar" aria-label="Birthday story progress" aria-valuemin="1" aria-valuemax="7" aria-valuenow="1"><div class="progress-fill" id="progressFill"></div></div></div>
+<div class="progress-area"><div class="progress-meta"><span id="chapterName">The beginning</span><span id="pageCount">01 / 07</span></div><div class="progress-track" role="progressbar" aria-label="Birthday adventure progress" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1"><div class="progress-fill" id="progressFill"></div></div></div>
 <main>
-<section class="page active" data-title="The beginning">
- <div class="page-inner"><span class="page-tag">A little universe, made for you</span><h1>Happy birthday,<em>Zahra.</em></h1><p class="lead">Today, the world gets to celebrate the wonderful person you are. And I get to celebrate how lucky I am to know you.</p><p class="subtle" style="margin-top:22px;letter-spacing:.15em;text-transform:uppercase">A day as lovely as you are ♡</p><div class="actions"><button class="btn primary" onclick="nextPage()">Start your birthday story ↗</button><button class="btn secondary" onclick="surprise()">A little surprise ✨</button></div><p class="subtle" style="margin-top:18px">Turn on the sound for a little birthday melody.</p></div>
+<section class="page active" data-title="Start">
+ <div class="page-inner"><span class="page-tag">A little universe, made for you</span><h1>Happy birthday,<em>Zahra.</em></h1><p class="lead">Your birthday adventure starts here. Ready, Zahra?</p><p class="subtle" style="margin-top:22px;letter-spacing:.15em;text-transform:uppercase">Your day. Your story. ♡</p><div class="actions"><button class="btn primary" onclick="nextPage()">Start your birthday story ↗</button><button class="btn secondary" onclick="surprise()">A little surprise ✨</button></div><p class="subtle" style="margin-top:18px"></p></div>
 </section>
-<section class="page" data-title="Your special day">
- <div class="page-inner"><span class="page-tag">Chapter one · Your day</span><h2>23 looks beautiful on you.</h2><p class="lead">A little reminder of how many moments have made you, you.</p><div class="panel age-layout"><div><div class="age-number">23</div><div class="age-label">and endlessly wonderful.</div></div><div><div class="counter-label">A little count of your time in this world</div><div class="counter" id="seconds">725,846,400</div><p class="subtle">Seconds of stories, smiles, lessons and lovely little moments — and counting.</p></div></div><div class="panel"><button class="cake" id="cake" aria-label="Birthday cake"><span class="flame"></span><span class="candle"></span><span class="cake-base"></span></button><button class="btn primary" id="blow">Make a wish & blow out the candle</button><p class="subtle" id="cakeHint">Close your eyes, make a wish, and tap the candle.</p></div></div>
+<section class="page" data-title="Make a wish">
+ <div class="page-inner"><span class="page-tag">Chapter one · Your day</span><h2>23 looks beautiful on you.</h2><p class="lead">Make a wish, then pop every balloon to unlock your letter.</p><div class="panel age-layout"><div><div class="age-number">23</div><div class="age-label">and endlessly wonderful.</div></div><div><div class="counter-label">A little count of your time in this world</div><div class="counter" id="seconds">725,846,400</div><p class="subtle">Every second is another reason to celebrate you.</p></div></div><div class="panel"><button class="cake" id="cake" aria-label="Birthday cake"><span class="flame"></span><span class="candle"></span><span class="cake-base"></span></button><button class="btn primary" id="blow">Make a wish & blow out the candle</button><p class="subtle" id="cakeHint">Close your eyes, make a wish, and tap the candle.</p></div></div>
 </section>
-<section class="page" data-title="Little reasons">
- <div class="page-inner"><span class="page-tag">Chapter two · The little things</span><h2>Five reasons, out of a million.</h2><p class="lead">Pop each balloon to uncover one little thing that makes you special.</p><div class="panel"><div class="balloon-grid" id="balloons"><button class="balloon" style="background:#d65b83;color:#d65b83">♡</button><button class="balloon" style="background:#e8ad55;color:#e8ad55">✦</button><button class="balloon" style="background:#9277b4;color:#9277b4">☾</button><button class="balloon" style="background:#64a99e;color:#64a99e">⌂</button><button class="balloon" style="background:#e78369;color:#e78369">✧</button></div><p class="subtle" id="balloonCount">0 of 5 balloons popped</p><div class="reason-list" id="reasonList"></div></div></div>
+<section class="page" data-title="Pop & discover">
+ <div class="page-inner"><span class="page-tag">Chapter two · The little things</span><h2>Pop all five to unlock a surprise.</h2><p class="lead">Tap each balloon. Find all five.</p><div class="panel"><div class="balloon-grid" id="balloons"><button class="balloon" style="background:#d65b83;color:#d65b83">♡</button><button class="balloon" style="background:#e8ad55;color:#e8ad55">✦</button><button class="balloon" style="background:#9277b4;color:#9277b4">☾</button><button class="balloon" style="background:#64a99e;color:#64a99e">⌂</button><button class="balloon" style="background:#e78369;color:#e78369">✧</button></div><p class="subtle" id="balloonCount">0 of 5 balloons popped</p><div class="reason-list" id="reasonList"></div></div></div>
 </section>
-<section class="page" data-title="Little memories">
- <div class="page-inner"><span class="page-tag">Chapter three · Little reminders</span><h2>The things I hope you never forget.</h2><p class="lead">Three small reminders for every day, not just your birthday.</p><div class="memory-grid"><article class="memory-card"><span class="memory-emoji">🌷</span><div><div class="memory-title">You are loved.</div><div class="memory-text">On your brightest days and on the days you need a little extra kindness.</div></div></article><article class="memory-card"><span class="memory-emoji">☀️</span><div><div class="memory-title">You are capable.</div><div class="memory-text">Keep going after the dreams that make your heart feel alive.</div></div></article><article class="memory-card"><span class="memory-emoji">✨</span><div><div class="memory-title">You are enough.</div><div class="memory-text">Exactly as you are, in every season and every version of yourself.</div></div></article></div></div>
+<section class="page" data-title="A secret letter">
+ <div class="page-inner"><span class="page-tag">Chapter four · From my heart</span><h2>Your secret message is waiting.</h2><p class="lead">Open it to see your birthday message.</p><button class="envelope" id="envelope" aria-label="Open your birthday letter"><span class="env-back"></span><span class="env-paper">For you ♡</span><span class="env-flap"></span><span class="env-front"></span></button><p class="subtle" id="envelopeHint">A little something, written just for you.</p><article class="panel letter" id="letterCard"><p class="salutation">Zahra, my love,</p><p>Your smile makes my hardest days lighter. Being with you feels like home, and I’m proud of the person you are.</p><p>May this year bring you laughter, peace, and everything your heart hopes for.</p><p class="signature">I love you—today and always. 🤍</p></article></div>
 </section>
-<section class="page" data-title="A letter for you">
- <div class="page-inner"><span class="page-tag">Chapter four · From my heart</span><h2>There's a letter for you.</h2><p class="lead">Some things deserve more than a message. Tap the envelope when you're ready.</p><button class="envelope" id="envelope" aria-label="Open your birthday letter"><span class="env-back"></span><span class="env-paper">For you ♡</span><span class="env-flap"></span><span class="env-front"></span></button><p class="subtle" id="envelopeHint">A little something, written just for you.</p><article class="panel letter" id="letterCard"><p class="salutation">Zahra, my love,</p><p>Today you turn 23, and I wanted to write you something more than a quick “happy birthday,” because you deserve much more than that.</p><p>23 years. 8,401 days. 201,624 hours. And every one of them was slowly getting the world ready for the day you'd walk into my life and make it so much brighter.</p><p>I don't know how to explain what you mean to me. You are the person I want to tell everything to, the one who makes my bad days easier and my good days better. Your smile is my favorite thing to look at, and your laugh can fix my mood in a second. Being with you feels like home.</p><p>I'm proud of who you are and everything you've become, and I'm excited for everything you're still going to achieve. You have so much light in you, and I hope you never doubt it.</p><p>On your birthday, I wish you:</p><ul class="wishes"><li>A year full of joy and laughter</li><li>Dreams that finally come true</li><li>Peace in your heart</li><li>Every happiness you deserve, and more</li></ul><p>Thank you for being you, for being patient with me, and for loving me the way you do. I promise to stand by you, support you, and celebrate you, today and every day after.</p><p class="signature">I love you, now and always. Happy birthday, Zahra. 🤍</p></article></div>
-</section>
-<section class="page" data-title="A wish for your year">
- <div class="page-inner"><span class="page-tag">Chapter five · A wish for you</span><h2>May this year be gentle with you.</h2><p class="lead">May it bring you closer to everything your heart has been quietly wishing for.</p><div class="panel quote"><div class="quote-mark">“</div><blockquote>Some people make the world feel softer, warmer, and a little more beautiful. You are that person.</blockquote><small>With all my love · Always</small></div><div class="actions"><button class="btn primary" onclick="surprise()">Send a wish into the universe ✨</button></div></div>
-</section>
-<section class="page" data-title="The grand finale">
- <div class="page-inner"><span class="page-tag">One last thing · Just for you</span><h1>Happy birthday,<em>my Zahra. ♡</em></h1><p class="lead">I hope you smiled at least once while exploring this little world I made for you. You deserve a thousand beautiful moments — today and every day.</p><div class="panel quote"><div class="quote-mark">♡</div><blockquote>My favorite part of every day is having you in my life.</blockquote><small>Today, tomorrow, and always</small></div><div class="actions"><button class="btn primary" onclick="celebrate()">Celebrate one more time 🎉</button><button class="btn secondary" onclick="goToPage(0)">Read it all again ↺</button></div><p class="subtle" style="margin-top:22px">Made with <span class="heart">♥</span> for Zahra.</p></div>
+<section class="page" data-title="Finale">
+ <div class="page-inner"><span class="page-tag">One last thing · Just for you</span><h1>Happy birthday,<em>my Zahra. ♡</em></h1><p class="lead">You finished your birthday adventure. I hope it made you smile. You deserve all the happiness in the world.</p><div class="panel quote"><div class="quote-mark">♡</div><blockquote>My favorite part of every day is having you in my life.</blockquote><small>Today, tomorrow, and always</small></div><div class="actions"><button class="btn primary" onclick="celebrate()">Celebrate one more time 🎉</button><button class="btn secondary" onclick="goToPage(0)">Read it all again ↺</button></div><p class="subtle" style="margin-top:22px">Made with <span class="heart">♥</span> for Zahra.</p></div>
 </section>
 <div class="page-controls"><button class="btn secondary" id="prevBtn" onclick="prevPage()">← Back</button><div class="page-dots" id="pageDots" aria-label="Page navigation"></div><button class="btn primary" id="nextBtn" onclick="nextPage()">Next chapter →</button></div>
-<footer class="footer">A little birthday universe, made with <span class="heart">♥</span> for Zahra.</footer>
+<footer class="footer">A birthday adventure, made with <span class="heart">♥</span> for Zahra.</footer>
 </main>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script>
 (() => {
  const $ = id => document.getElementById(id);
  const pages = [...document.querySelectorAll('.page')];
- let current = 0, audioCtx = null, soundOn = false, candleBlown = false, popped = 0;
+ let current = 0, audioCtx = null, soundOn = false, candleBlown = false, popped = 0, letterOpened = false;
  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
  const toast = message => { const el=$('toast'); el.textContent=message; el.classList.add('show'); clearTimeout(toast.timer); toast.timer=setTimeout(()=>el.classList.remove('show'),2400); };
  // A short, original synthesized birthday fanfare. It is played on each page change.
@@ -103,9 +97,11 @@ h1,h2{font-family:var(--serif);font-weight:500;letter-spacing:-.055em}h1{font-si
    $('chapterName').textContent=pages[current].dataset.title;
    $('pageCount').textContent=String(current+1).padStart(2,'0')+' / '+String(pages.length).padStart(2,'0');
    document.querySelector('.progress-track').setAttribute('aria-valuenow',String(current+1));
+   document.querySelector('.progress-track').setAttribute('aria-valuemax',String(pages.length));
    $('progressFill').style.width=((current+1)/pages.length*100)+'%';
    $('prevBtn').disabled=current===0;
-   $('nextBtn').textContent=current===pages.length-1?'Start again ↺':'Next chapter →';
+   $('nextBtn').textContent=current===pages.length-1?'Play again ↺':'Continue →';
+   $('nextBtn').disabled=(current===1&&!candleBlown)||(current===2&&popped<5)||(current===3&&!letterOpened);
    $('pageDots').innerHTML=pages.map((_,i)=>`<span class="dot ${i===current?'active':''}"></span>`).join('');
    window.scrollTo({top:0,behavior:reduced?'auto':'smooth'});
    playBirthdayTune();
@@ -135,13 +131,13 @@ h1,h2{font-family:var(--serif);font-weight:500;letter-spacing:-.055em}h1{font-si
  window.surprise=()=>{celebrate();toast('A little happiness, just for you ♡');};
  $('surprise').addEventListener('click',surprise);
  // Birthday candle
- function blowCandle(){if(candleBlown)return;candleBlown=true;$('cake').classList.add('out');$('blow').textContent='Your wish is on its way ✨';$('cakeHint').textContent='May every beautiful wish find its way to you.';celebrate();toast('Wish sent into the universe ✨');}
+ function blowCandle(){if(candleBlown)return;candleBlown=true;$('cake').classList.add('out');$('blow').textContent='Your wish is on its way ✨';$('cakeHint').textContent='Wish sent! Pop all five balloons to continue.';render();celebrate();toast('Wish sent into the universe ✨');}
  $('cake').addEventListener('click',blowCandle);$('blow').addEventListener('click',blowCandle);
  // Balloon messages
  const messages=['Your smile makes my whole day better.','Your laugh can fix my mood in a second.','You make my bad days easier and my good days better.','Being with you feels like home.','You have so much light in you.'];
- document.querySelectorAll('.balloon').forEach((balloon,index)=>{balloon.type='button';balloon.setAttribute('aria-label',`Pop balloon ${index+1}`);balloon.addEventListener('click',()=>{if(balloon.classList.contains('popped'))return;balloon.classList.add('popped');popped++;const r=balloon.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2,35);const item=document.createElement('div');item.className='reason';item.textContent=messages[index];$('reasonList').appendChild(item);$('balloonCount').textContent=popped===5?'All five popped — and those are only five of a million.':`${popped} of 5 balloons popped`;if(popped===5){setTimeout(()=>{toast('A million more reasons to love you ♡');celebrate();},400);}});});
+ document.querySelectorAll('.balloon').forEach((balloon,index)=>{balloon.type='button';balloon.setAttribute('aria-label',`Pop balloon ${index+1}`);balloon.addEventListener('click',()=>{if(balloon.classList.contains('popped'))return;balloon.classList.add('popped');popped++;const r=balloon.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2,35);const item=document.createElement('div');item.className='reason';item.textContent=messages[index];$('reasonList').appendChild(item);$('balloonCount').textContent=popped===5?'All five popped — and those are only five of a million.':`${popped} of 5 balloons popped`;if(popped===5){render();setTimeout(()=>{toast('All five found! Your letter is unlocked ♡');celebrate();},400);}});});
  // Letter envelope
- $('envelope').addEventListener('click',()=>{if($('letterCard').classList.contains('show'))return;$('envelope').classList.add('open');$('letterCard').classList.add('show');$('envelopeHint').textContent='A letter, from my heart to yours.';setTimeout(()=>{$('letterCard').scrollIntoView({behavior:reduced?'auto':'smooth',block:'center'});celebrate();},450);});
+ $('envelope').addEventListener('click',()=>{if(letterOpened)return;letterOpened=true;$('envelope').classList.add('open');$('letterCard').classList.add('show');$('envelopeHint').textContent='Letter unlocked. Continue for one last surprise.';render();setTimeout(()=>{$('letterCard').scrollIntoView({behavior:reduced?'auto':'smooth',block:'center'});celebrate();},450);});
  // Keyboard navigation
  document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')nextPage();if(e.key==='ArrowLeft')prevPage();});
  render();
